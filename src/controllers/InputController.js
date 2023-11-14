@@ -12,6 +12,16 @@ class InputController {
       }
     }
   }
+
+  async askMenuQuantityList() {
+    while (true) {
+      try {
+        return await InputView.readMenuQuantityList();
+      } catch (error) {
+        Console.log(`${ERROR_MESSAGE.error} ${error.message}`);
+      }
+    }
+  }
 }
 
 export default InputController;

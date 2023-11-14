@@ -5,5 +5,8 @@ const InputView = {
   async readDate() {
     return Console.readLineAsync(EVENT_MESSAGE.visitDate);
   },
+  async readMenuQuantityList() {
+    return Console.readLineAsync(EVENT_MESSAGE.menuQuantityList);
+  },
 };
 export default InputView;
