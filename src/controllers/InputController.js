@@ -8,7 +8,7 @@ class InputController {
       try {
         return await InputView.readDate();
       } catch (error) {
-        Console.log(`${ERROR_MESSAGE.error} ${error.message}`);
+        Console.print(`${ERROR_MESSAGE.error} ${error.message}`);
       }
     }
   }
@@ -18,7 +18,7 @@ class InputController {
       try {
         return await InputView.readMenuQuantityList();
       } catch (error) {
-        Console.log(`${ERROR_MESSAGE.error} ${error.message}`);
+        Console.print(`${ERROR_MESSAGE.error} ${error.message}`);
       }
     }
   }

@@ -4,7 +4,7 @@ class MenuQuantity {
   constructor(menuQuantity) {
     const [menu, quantity] = menuQuantity.split(RULES.seperator.menuQuantitiy);
     this.menu = menu;
-    this.quantity = quantity;
+    this.quantity = Number(quantity);
   }
 }
 
